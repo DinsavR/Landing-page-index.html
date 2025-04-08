@@ -1,3 +1,19 @@
+body {
+  background-color: #8a9a63;
+  margin: 0; /*убирает отступы по умолчанию*/
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  border: 20px solid transparent; /*Прозрачная рамка*/
+  border-image: url(Frames/decorative-frame.svg) 30 round;
+}
+
+.page-frame {
+~
+}
+
 @font-face {
   font-family: 'Comforter';
   src: url('Font/ComforterBrush-Regular.otf') format('woff2');
@@ -17,7 +33,7 @@
   border-radius: 50px;
   box-shadow: 0 0 40px rgba(0, 100green, 0blue, 0.6);
   text-align: center;
-  color: #639a8f;
+  color: #fb877e;
   font-size: 250%;
   font-family: 'Comforter', serif;
   display: flex;
@@ -42,20 +58,6 @@
   background-size: cover;
   background-position: center;
   border-radius: 45px;
-  filter: brightness(80%);
+  filter: brightness(90%);
   z-index: -1;
 }
-
-
-
-body {
-  background-color: #8a9a63;
-  margin: 0; /*убирает отступы по умолчанию*/
-  height: 100vh; 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-
-}
-

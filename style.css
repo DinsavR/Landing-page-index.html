@@ -1,18 +1,28 @@
 body {
   background-color: #8a9a63;
   margin: 0; /*убирает отступы по умолчанию*/
+  padding: 0%;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  border: 20px solid transparent; /*Прозрачная рамка*/
-  border-image: url(Frames/decorative-frame.svg) 30 round;
+  border: 65px solid transparent; /*Прозрачная рамка*/
+  border-image: url(Frames/full_frame_ornament.svg) 200 round;
+  background-image: url(Background_pic/Botl.jpg); 
+  background-repeat: no-repeat; /*отключает повтор*/
+  background-size: cover; /*растягивает на весь экран*/
+  background-position: center center;
 }
 
 .page-frame {
-~
+height: 100vh;
+width: 100%;
+border: 4px solid #000;
+box-sizing: border-box;
 }
+
+
 
 @font-face {
   font-family: 'Comforter';
@@ -22,24 +32,24 @@ body {
 }
 
 .nameplate {
-  position: relative;
-  top: 4%;
+  position: absolute;
+  top: 3.2%;
   left: auto;
-  width: 45%;
-  height: 100px;
-  max-width: 600px;
-  padding: 45px;
-  border: 4px solid #a1ae82;
-  border-radius: 50px;
+  width: 100%;
+  height: 110px;
+  max-width: 600px;  
+  border: 45px solid transparent;
+  padding: 40px;
   box-shadow: 0 0 40px rgba(0, 100green, 0blue, 0.6);
+  z-index: 0;
   text-align: center;
   color: #fb877e;
-  font-size: 250%;
+  font-size: 250%; /*размер шрифта, высота букв*/
   font-family: 'Comforter', serif;
   display: flex;
   justify-content: center;
   align-items: padding;
-  line-height: 65px;
+  line-height: 45px;
   z-index: 1;
     text-shadow: 2.5px 2.5px 0px #535d3c,
         -2.5px -2.5px 0px #535d3c,
@@ -50,14 +60,18 @@ body {
 .nameplate::before {
   content:'';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; 
-  height: 100%;
+  top: 5%;
+  left: 0%;
+  width: 99%; 
+  height: 89%;
   background-image:url('Pic_for_lp_dnd/dnd\ map1.jpg');
   background-size: cover;
   background-position: center;
-  border-radius: 45px;
+  border-radius: 4px; /*скругление*/ 
   filter: brightness(90%);
   z-index: -1;
+}
+
+.Avatar {
+  
 }
